@@ -8,7 +8,7 @@ const port = 8080;
 app.use(cors());
 
 const SALLA_PRODUCTS_URL = "https://api.salla.dev/admin/v2/products";
-const SALLA_ACCESS_TOKEN = "ory_at_TTM3vpYqN0nSerGinoO_kqq4yVnRzavL4TaPFkXMRqw.6Mo93dAFdgpJ_bGo0-7aHyvrCqFFsIVKbt5HeEu4-rg";
+const SALLA_ACCESS_TOKEN = process.env.SALLA_ACCESS_TOKEN;
 
 // Helpers shared across display models so forks stay consistent
 const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
