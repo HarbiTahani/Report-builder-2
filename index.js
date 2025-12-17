@@ -231,7 +231,7 @@ async function fetchProductMetrics() {
 
   const status_breakdown = Object.entries(statusCounts).map(
     ([status, count], idx) => ({
-      name: status,
+      name: "hola",
       value: count,
       percentage:
         metrics.total_products > 0
