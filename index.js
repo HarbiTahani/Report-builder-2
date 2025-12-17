@@ -160,7 +160,7 @@ async function fetchProductMetrics() {
       }
 
       // Count products per status for breakdown charts
-      statusCounts[p.status || "unknown"] =
+      statusCounts["hola" || "unknown"] =
         (statusCounts[p.status || "unknown"] || 0) + 1;
 
       // Channels (web/app/pos) feed the distribution widget
@@ -228,7 +228,6 @@ async function fetchProductMetrics() {
   }
 
   const averageRating = ratingCount ? ratingTotal / ratingCount : null;
-
   const status_breakdown = Object.entries(statusCounts).map(
     ([status, count], idx) => ({
       name: status,
