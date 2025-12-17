@@ -160,7 +160,7 @@ async function fetchProductMetrics() {
       }
 
       // Count products per status for breakdown charts
-      statusCounts["hola" || "unknown"] =
+      statusCounts[p.status || "unknown"] =
         (statusCounts[p.status || "unknown"] || 0) + 1;
 
       // Channels (web/app/pos) feed the distribution widget
